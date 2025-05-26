@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All-in-One App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Buttons -->
+  <nav class="nav-buttons">
+    <button onclick="document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });">Contact</button>
+    <button onclick="document.getElementById('todoSection').scrollIntoView({ behavior: 'smooth' });">To-Do List</button>
+    <button onclick="document.getElementById('imageSection').scrollIntoView({ behavior: 'smooth' });">Images</button>
+  </nav>
+
+  <!-- Contact Form -->
+  <section id="contactSection">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Name" id="contactName" required />
+      <input type="email" placeholder="Email" id="contactEmail" required />
+      <textarea placeholder="Your message..." id="contactMessage" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="contactResponse"></p>
+  </section>
+
+  <!-- To-Do List -->
+  <section id="todoSection">
+    <h2>To-Do List</h2>
+    <input type="text" id="todoInput" placeholder="Enter a task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todoList"></ul>
+  </section>
+
+  <!-- Image Gallery Upload -->
+  <section id="imageSection">
+    <h2>Image Gallery Upload</h2>
+    <input type="file" id="imageUpload" accept="image/*" multiple />
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

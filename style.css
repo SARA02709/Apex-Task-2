@@ -1,0 +1,145 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #cf4acf; /* baby pink background */
+  color: #333;
+}
+
+/* Optional Page Header */
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+/* Section layout */
+section {
+  background: #e8b3f4; /* light purple */
+  padding: 60px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+/* Section titles */
+h2 {
+  color: #4b004b;
+  border-bottom: 1px solid #d69cd6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input fields, textareas, buttons */
+input, textarea {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff0f7;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #cf4acf; /* purple */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #9b2b9b; /* darker purple */
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  position: sticky;
+  top: 0;
+  background: #e8b3f4;
+  padding: 10px 20px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #cf4acf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #9b2b9b;
+}
+
+/* To-Do List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #ffe4f0; /* baby pink task background */
+  border-radius: 6px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background: #f2d5e3;
+}
+
+li button {
+  margin-left: 15px;
+  padding: 4px 10px;
+  background-color: #cf4acf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background-color: #9b2b9b;
+}
+
+/* Gallery styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
